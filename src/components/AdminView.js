@@ -12,7 +12,7 @@ export default class AdminView extends Component {
             console.log(product)
             return <Product 
             key={index} 
-            name={product.productName}
+            name={product.name}
             description={product.description}
             price={product.price}/>
              

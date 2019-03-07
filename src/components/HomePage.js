@@ -11,12 +11,12 @@ export default class HomePage extends Component {
     showEditForm: false,
     productList: [
       {
-        productName: 'Hammer',
+        name: 'Hammer',
         description: 'Its a hammer',
         price: 12.3,
       },
       {
-        productName: 'Nail',
+        name: 'Nail',
         description: 'Its a nail',
         price: 0.12,
       }

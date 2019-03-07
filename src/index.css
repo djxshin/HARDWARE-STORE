@@ -22,3 +22,8 @@ code {
 .hardware-header * {
   margin: 7.5px 0;
 }
+
+.product{
+  margin: 10px;
+  border: 2px solid black;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Product from './Product';
+import ProductForm from './ProductForm';
 
 
 export default class AdminView extends Component {
@@ -19,7 +20,7 @@ export default class AdminView extends Component {
             
         })}
         <h2>Create a New Product</h2>
-        {/* create product form goes here */}
+        <ProductForm/>
       </div>
     )
   }

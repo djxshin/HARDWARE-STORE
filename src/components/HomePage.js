@@ -7,6 +7,10 @@ export default class HomePage extends Component {
     showEditForm: false
   }
 
+  handleClick = () => {
+    console.log('hey man!!')
+  }
+
   render() {
 
     return (
@@ -14,7 +18,7 @@ export default class HomePage extends Component {
         <div>
         <h1>My Hardware Store</h1>
 	      <div>Currently On Sale: {this.state.itemCurrentlyOnSale} !</div>
-        <button>Edit Sale Item</button>
+        <button onClick={this.handleClick}>Edit Sale Item</button>
           {this.state.showEditForm ? (
               <div>
                 <input type="text" placeholder="Update Item Here"/>

@@ -38,8 +38,15 @@ export default class HomePage extends Component {
       itemCurrentlyOnSale: event.target.value 
     })
    
-
   }
+
+  addProductToProuctList = (newProduct) => {
+      const newProductList = [...this.state.productList, newProduct]
+    this.setState({
+      productList: newProductList
+    })
+  }
+
 
   render() {
 

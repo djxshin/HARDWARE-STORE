@@ -12,3 +12,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.hardware-header {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hardware-header * {
+  margin: 7.5px 0;
+}

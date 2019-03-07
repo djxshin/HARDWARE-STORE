@@ -1,11 +1,27 @@
 import React, { Component } from 'react'
+import AdminView from './AdminView';
+import ShopView from './ShopView';
+import CartView from './CartView';
 
 
 export default class HomePage extends Component {
 
   state = {
     itemCurrentlyOnSale: 'some nails',
-    showEditForm: false
+    showEditForm: false,
+    productList: [
+      {
+        productName: 'Hammer',
+        description: 'Its a hammer',
+        price: 12.3,
+      },
+      {
+        productName: 'Nail',
+        description: 'Its a nail',
+        price: 0.12,
+      }
+    ]
+ 
   }
 
   handleClick = () => {
@@ -19,7 +35,7 @@ export default class HomePage extends Component {
   handleChange = (event) => {
     console.log(event.target.value)
     this.setState({
-      itemCurrentlyOnSale: event.target.value
+      itemCurrentlyOnSale: event.target.value 
     })
    
 
@@ -50,6 +66,14 @@ export default class HomePage extends Component {
             }
         
           </div>
+          <hr/>
+           <AdminView 
+           productList={this.state.productList} 
+           />
+           <div>
+             <ShopView/>
+             <CartView/>
+           </div>
       </div>
     )
   }

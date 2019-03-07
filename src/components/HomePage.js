@@ -40,7 +40,7 @@ export default class HomePage extends Component {
    
   }
 
-  addProductToProuctList = (newProduct) => {
+  addProductToProuctList = newProduct => {
       const newProductList = [...this.state.productList, newProduct]
     this.setState({
       productList: newProductList
@@ -76,6 +76,7 @@ export default class HomePage extends Component {
           <hr/>
            <AdminView 
            productList={this.state.productList} 
+           addProductToProuctList={this.addProductToProuctList}
            />
            <div>
              <ShopView/>

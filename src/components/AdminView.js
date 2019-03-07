@@ -20,7 +20,9 @@ export default class AdminView extends Component {
             
         })}
         <h2>Create a New Product</h2>
-        <ProductForm/>
+        <ProductForm
+            addProductToProuctList={this.props.addProductToProuctList}
+        />
       </div>
     )
   }

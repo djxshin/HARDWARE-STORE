@@ -18,7 +18,8 @@ export default class ProductForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        console.log('this did not refresh')
+       
+        this.props.addProductToProuctList(this.state)
     }
 
   render() {

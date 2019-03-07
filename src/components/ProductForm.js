@@ -20,6 +20,11 @@ export default class ProductForm extends Component {
         event.preventDefault()
        
         this.props.addProductToProuctList(this.state)
+        this.setState({
+            name:'',
+            description: '',
+            price: 0
+        })
     }
 
   render() {

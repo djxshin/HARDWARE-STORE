@@ -16,6 +16,15 @@ export default class HomePage extends Component {
    
   }
 
+  handleChange = (event) => {
+    console.log(event.target.value)
+    this.setState({
+      itemCurrentlyOnSale: event.target.value
+    })
+   
+
+  }
+
   render() {
 
     return (
@@ -32,7 +41,10 @@ export default class HomePage extends Component {
         </button>
           {this.state.showEditForm ? (
               <div>
-                <input type="text" placeholder="Update Item Here"/>
+                <input type="text" placeholder="Update Item Here" 
+                      value={this.state.itemCurrentlyOnSale} 
+                      onChange={this.handleChange}
+                />
               </div>
             ): null
             }
